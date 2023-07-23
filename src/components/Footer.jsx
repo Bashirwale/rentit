@@ -9,7 +9,7 @@ import { BiPhoneCall } from "react-icons/bi";
 const Footer = () => {
   return (
     <footer className="bg-customPurple px-6 md:px-16 py-6 md:py-12 w-full">
-      <div className="flex flex-col md:flex-row justify-between border-b-2 border-gray-400 pb-10 md:pb-24">
+      <div className="flex flex-col md:flex-row justify-between border-b-2 md:gap-3 border-gray-400 pb-10 md:pb-24">
         <div className="flex md:block items-center justify-between mb-4">
           <div className="inline-block rounded-md text-base p-2 bg-white cursor-pointer">
             <Link to="/" className="flex justify-center gap-4">
@@ -24,14 +24,15 @@ const Footer = () => {
               <BiMailSend />
               info@rentit.com
             </p>
-            <p className="flex items-center gap-2">
-              <BiPhoneCall /> +234(0)80 5555 555
+            <p className="flex items-center gap-1">
+              <BiPhoneCall />
+              +(234)80555555
             </p>
           </div>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           <div className="flex flex-col gap-2 md:justify-between">
-            <h2 className=" text-sm md:text-base font-semibold text-white">
+            <h2 className=" text-sm md:text-base font-bold text-white">
               Buy, Rent & Sell
             </h2>
             <p className="text-sm text-white font-normal">
@@ -40,10 +41,8 @@ const Footer = () => {
             <p className="text-sm text-white font-normal">Rent home</p>
             <p className="text-sm text-white font-normal">Finance</p>
           </div>
-          <div className="flex flex-col gap-4 md:justify-between">
-            <h2 className="text-sm md:text-base font-semibold text-white">
-              About
-            </h2>
+          <div className="flex flex-col md:justify-between">
+            <h2 className="text-sm md:text-base font-bold text-white">About</h2>
             <p className="text-sm text-white font-normal">How it works</p>
             <p className="text-sm text-white font-normal">Contact</p>
             <p className="text-sm text-white font-normal">Company</p>
@@ -56,8 +55,8 @@ const Footer = () => {
             <p className="text-sm text-white font-normal">Privacy POlicy</p>
             <p className="text-sm text-white font-normal">Trust & Security</p>
           </div>
-          <div className="flex flex-col gap-3 md:justify-between">
-            <h2 className="text-sm md:text-base font-semibold text-white">
+          <div className="flex flex-col md:justify-between">
+            <h2 className="text-sm md:text-base font-bold text-white">
               Resources
             </h2>
             <p className="text-sm text-white font-normal">FAQ</p>
@@ -73,14 +72,14 @@ const Footer = () => {
           </p>
         </div>
         <div className="flex gap-2 md:gap-4">
-          <div className="bg-blue-700 p-1 md:p-2 rounded-lg">
+          <div className="bg-blue-700 p-2 md:p-2 rounded-lg">
             <FaFacebook className="bg-blue-700 text-white" />
           </div>
-          <div className="bg-blue-900 p-1 md:p-2 rounded-lg">
+          <div className="bg-blue-900 p-2 rounded-lg">
             <FaLinkedinIn className="bg-blue-900 text-white" />
           </div>
-          <div className="bg-pink-800 p-4 md:p-2 rounded-lg">
-            <FaInstagram className="bg-pink-800 text-white" />
+          <div className="bg-pink-600 p-2 rounded-lg">
+            <FaInstagram className="bg-pink-600 text-white" />
           </div>
         </div>
       </div>

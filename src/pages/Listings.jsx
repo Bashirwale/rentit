@@ -5,10 +5,10 @@ import map from "../components/assets/maplist.png";
 
 const Listings = () => {
   return (
-    <div className="py-6 md:py-12">
+    <div className="py-6">
       <ListingsFilter />
-      <div className=" md:flex">
-        <div className="grid grid-cols-1 md:grid-cols-2 w-full md:w-2/4 px-6 md:px-16 py-6 md:py-12 gap-6">
+      <div className=" lg:flex">
+        <div className="grid grid-cols-1 md:grid-cols-2 w-full lg:w-2/4 px-6 md:px-10 lg:px-16 py-6 md:py-12 gap-6">
           <Listing />
           <Listing />
           <Listing />

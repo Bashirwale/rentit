@@ -18,7 +18,7 @@ const ListingsFilter = () => {
             <select
               name="rent"
               id="rent"
-              className="flex items-center text-sm font-medium bg-gray-100 rounded"
+              className="flex items-center justify-center text-sm font-medium bg-gray-100 rounded"
             >
               <option value="">For Rent</option>
             </select>

@@ -5,8 +5,8 @@ const Map = () => {
   return (
     <div className="bg-yellow-50 md:px-16">
       <div className="flex justify-center px-6">
-        <p className="flex items-center justify-center gap-2 w-3/4 md:w-2/5 p-2 text-sm font-semibold text-yellow-900 px-4 md:px-2  bg-neutral-100 rounded">
-          <span className="px-2  bg-yellow-200 font-semibold rounded-md">
+        <p className="flex items-center justify-center gap-4 w-full md:w-2/5 p-1 text-sm font-semibold text-yellow-900 px-1 md:px-2  bg-neutral-100 rounded">
+          <span className="px-1  bg-yellow-200 font-semibold rounded-md w-3/5 ">
             Coming soon
           </span>
           This feature is now available on beta testing

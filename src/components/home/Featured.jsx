@@ -11,19 +11,19 @@ const Featured = () => {
       <p className="text-base font-medium text-stone-600">
         FEATURED PROPERTIES
       </p>
-      <p className="text-2xl font-bold my-3">We provide you</p>
-      <h2 className="text-3xl font-bold gradient-text md:hidden">
+      <p className="text-xl md:text-2xl font-bold my-3">We provide you</p>
+      <h2 className="text-2xl md:text-3xl font-bold gradient-text md:hidden">
         Affordable Living In The Heart of the Country
       </h2>
       <h2 className="hidden md:block text-3xl font-bold gradient-text mb-12">
         The Best Available Properties
       </h2>
       <div className="p-3 md:p-0 md:absolute md:-top-8 md:right-16">
-        <div className="flex items-center justify-center gap-14 bg-neutral-100 rounded-md p-2 mt-6 ">
+        <div className="flex items-center justify-center gap-6 md:gap-12 bg-neutral-100 rounded-md p-2 mt-6  w-full">
           <p className="text-xs font-semibold text-customPurple hover:text-customPurple hover:font-medium text-center cursor-pointer">
             Houses
           </p>
-          <p className="text-xs font-normal text-neutral-500 hover:text-customPurple hover:font-medium py-2 px-8 border-x-2 border-neutral-600 cursor-pointer">
+          <p className="text-xs font-normal text-neutral-500 hover:text-customPurple hover:font-medium py-2 px-6 border-x-2 border-neutral-600 cursor-pointer">
             Apartment
           </p>
           <p className="text-xs font-normal text-neutral-500 hover:text-customPurple hover:font-medium cursor-pointer ">

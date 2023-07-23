@@ -4,7 +4,7 @@ import BlogPost from "../components/BlogPost";
 
 const Blogs = () => {
   return (
-    <div>
+    <div className="mt-4">
       <div>
         <img src={blog} alt="tree" />
       </div>
