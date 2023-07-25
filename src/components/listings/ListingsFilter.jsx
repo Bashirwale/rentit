@@ -14,11 +14,11 @@ const ListingsFilter = () => {
           />
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
-          <div className="bg-gray-100 shadow p-1">
+          <div className="flex items-center bg-gray-100 shadow">
             <select
               name="rent"
               id="rent"
-              className="flex items-center justify-center text-sm font-medium bg-gray-100 rounded"
+              className=" text-sm font-medium bg-gray-100 rounded"
             >
               <option value="">For Rent</option>
             </select>

@@ -6,7 +6,7 @@ import thewall from "../../components/assets/featured/thewall.png";
 
 const Trusted = () => {
   return (
-    <div className="w-full mt-6 overflow-hidden">
+    <div className="w-full mt-6 overflow-hidden px-8">
       <h2 className="text-base text-neutral-500 font-semibold text-center">
         Trusted By:
       </h2>

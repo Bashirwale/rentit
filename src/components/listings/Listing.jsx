@@ -14,7 +14,7 @@ const Listing = () => {
         <img src={house1} alt="house" className="h-full" />
       </div>
       <div className="w-2/4 md:w-full">
-        <p className="text-base md:text-2xl  font-bold p-2  text-green-500">
+        <p className="text-base md:text-2xl font-bold py-2 text-green-500">
           N50,732,234.00
         </p>
         <p className="text-black text-sm md:text-base  font-medium md:font-bold">

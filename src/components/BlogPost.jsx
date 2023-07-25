@@ -3,7 +3,7 @@ import blogpost from "../components/assets/blogpost.png";
 
 const BlogPost = () => {
   return (
-    <div className="border rounded-md p-3 max-w-xs">
+    <div className="border rounded-md p-3 w-full">
       <div className="w-full">
         <img src={blogpost} alt="penthouse" className="w-full" />
       </div>
@@ -14,7 +14,7 @@ const BlogPost = () => {
         </p>
       </div>
       <div className="py-2 w-full">
-        <h2 className="text-xl font-bold py-4 ">Explore Real Estate</h2>
+        <h2 className="text-xl font-bold mb-1 ">Explore Real Estate</h2>
         <p className="text-sm text-neutral-500 font-normal w-full">
           By Investing with Us, You Can Enjoy the Benefits of Compound Growth,
           Diversi...

@@ -9,17 +9,17 @@ import { BiPhoneCall } from "react-icons/bi";
 const Footer = () => {
   return (
     <footer className="bg-customPurple px-6 md:px-16 py-6 md:py-12 w-full">
-      <div className="flex flex-col md:flex-row justify-between border-b-2 md:gap-3 border-gray-400 pb-10 md:pb-24">
+      <div className="flex flex-col md:flex-row md:justify-between border-b-2 md:gap-3 border-gray-400 pb-10 md:pb-24">
         <div className="flex md:block items-center justify-between mb-4">
           <div className="inline-block rounded-md text-base p-2 bg-white cursor-pointer">
-            <Link to="/" className="flex justify-center gap-4">
+            <Link to="/" className="flex items-center justify-center gap-4">
               <p className="text-sm md:text-lg text-customPurple font-semibold">
                 Rent <span className="font-normal">it</span>
               </p>
               <GoHome className="text-customPurple text-sm md:text-lg" />
             </Link>
           </div>
-          <div className="text-white font-normal text-sm md:text-base md:mt-8">
+          <div className="flex items-center text-white font-normal text-sm md:text-base md:mt-8">
             <p className="flex items-center gap-2">
               <BiMailSend />
               info@rentit.com

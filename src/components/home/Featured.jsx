@@ -18,7 +18,7 @@ const Featured = () => {
       <h2 className="hidden md:block text-3xl font-bold gradient-text mb-12">
         The Best Available Properties
       </h2>
-      <div className="p-3 md:p-0 md:absolute md:-top-8 md:right-16">
+      <div className="md:absolute md:-top-8 md:right-16 w-full mb-4">
         <div className="flex items-center justify-center gap-6 md:gap-12 bg-neutral-100 rounded-md p-2 mt-6  w-full">
           <p className="text-xs font-semibold text-customPurple hover:text-customPurple hover:font-medium text-center cursor-pointer">
             Houses
@@ -61,12 +61,12 @@ const Featured = () => {
         </div>
 
         <div className="md:w-1/4 md:flex md:flex-col md:justify-between">
-          <p className="text-sm text-neutral-500 font-normal my-6 md:m-0 md:text-right md:p-2">
+          <p className="text-sm text-neutral-500 font-normal mt-6 md:m-0 md:text-right md:p-2">
             Welcome to our apartment rental website! We are dedicated to helping
             you find the perfect place to call home. Our selection of properties
             includes a wide range of options to suit every need and budget.
           </p>
-          <div className="relative">
+          <div className="relative mt-2">
             <img src={brownbuild} alt="pent house" className="w-full" />
             <span className="absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 bg-customPurple text-xl md:text-lg md:p-2 p-5 font-bold text-white">
               <HiChevronDoubleRight />
