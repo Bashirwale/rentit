@@ -52,7 +52,7 @@ const Footer = () => {
             Terms and Privacy
           </h2>
           <p className="text-sm text-white font-normal">Terms of Use</p>
-          <p className="text-sm text-white font-normal">Privacy POlicy</p>
+          <p className="text-sm text-white font-normal">Privacy Policy</p>
           <p className="text-sm text-white font-normal">Trust & Security</p>
         </div>
         <div className="flex flex-col items-end md:items-start md:justify-between">
