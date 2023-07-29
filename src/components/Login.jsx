@@ -6,6 +6,12 @@ const Login = ({ setOpenLogin }) => {
   return (
     <div className="fixed top-0 left-0 bg-white flex items-center justify-center w-full h-screen py-8 md:py-10 bg-opacity-50">
       <div className="bg-gray-100 flex flex-col items-center gap-2 h-full p-4 rounded-md w-96">
+        <span
+          onClick={() => setOpenLogin(false)}
+          className="absolute top-2 right-4 text-2xl text-black font-bold cursor-pointer"
+        >
+          x
+        </span>
         <Logo />
         <div className="bg-white p-4 rounded-md w-full shadow-md h-full">
           <div>

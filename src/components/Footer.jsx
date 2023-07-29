@@ -24,14 +24,14 @@ const Footer = () => {
               <BiMailSend />
               info@rentit.com
             </p>
-            <p className="flex items-center gap-1">
+            <p className="flex items-center text-right gap-1">
               <BiPhoneCall />
               +(234)80555555
             </p>
           </div>
         </div>
 
-        <div className="flex flex-col gap-2 md:justify-between">
+        <div className="flex flex-col md:justify-between">
           <h2 className=" text-sm md:text-base font-bold text-white">
             Buy, Rent & Sell
           </h2>

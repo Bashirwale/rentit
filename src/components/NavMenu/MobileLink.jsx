@@ -24,7 +24,10 @@ const MobileLink = ({ setOpenMenu, handleOpenLogin }) => {
       </ul>
       <div className="flex items-center justify-between p-2 md:p-8">
         <button
-          onClick={handleOpenLogin}
+          onClick={() => {
+            handleOpenLogin();
+            setOpenMenu(false);
+          }}
           className=" bg-customPurple px-2 py-1 md:px-4 md:py-2 rounded-md text-white text-sm font-medium hover:p-1"
         >
           Log in
