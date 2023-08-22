@@ -20,11 +20,11 @@ const Footer = () => {
             </Link>
           </div>
           <div className="text-white text- font-normal text-sm md:text-base md:mt-4">
-            <p className="flex items-center gap-1">
+            <p className="flex items-center gap-2">
               <BiMailSend />
               info@rentit.com
             </p>
-            <p className="flex items-center text-right gap-1">
+            <p className="flex items-center gap-1">
               <BiPhoneCall />
               +(234)80555555
             </p>

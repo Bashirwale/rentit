@@ -1,11 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&family=Rubik:wght@400;500;700&family=Sora:wght@500;600;700;800&display=swap");
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+body {
+  font-family: "Sora", "Roboto", "Rubik";
+}
 .gradient-text {
   background: linear-gradient(140deg, #9388fe, #d8d6e7);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+}
+.formInputFile::-webkit-file-upload-button {
+  @apply bg-customPurple;
+  @apply border-none;
+  @apply text-white;
+  @apply font-semibold;
+  @apply py-1 px-4;
+  @apply rounded-md;
 }
 .h-508 {
   height: 720px;

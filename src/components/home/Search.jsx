@@ -36,8 +36,8 @@ const Search = () => {
             Location
           </label>
           <select
-            name="price"
-            id="price"
+            name="location"
+            id="location"
             className="text-gray-500 text-sm p-4 md:p-2 focus:outline-none w-full bg-gray-200 rounded-md"
           >
             <option value="">Search Location</option>

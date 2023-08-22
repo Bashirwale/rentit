@@ -1,47 +1,61 @@
-import { Link } from "react-router-dom";
-const MobileLink = ({ setOpenMenu, handleOpenLogin }) => {
+import { NavLink } from "react-router-dom";
+
+const MobileLink = ({ setOpenMenu, handleOpenLogin, user }) => {
   return (
     <div className="md:hidden fixed top-0 right-0 z-50 flex flex-col justify-between h-full bg-white w-full p-16">
       <ul className="flex flex-col items-center gap-10">
         <li>
-          <Link
+          <NavLink
             to="/blogs"
             onClick={() => setOpenMenu(false)}
-            className="text-sm font-medium text-black hover:text-xl"
+            className="text-sm font-medium text-black hover:text-base hover:border-b-2  hover:border-customPurple hover:pb-2 transition"
           >
             Blog
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link
+          <NavLink
             to="/listings"
             onClick={() => setOpenMenu(false)}
-            className="text-sm font-medium text-black hover:text-xl"
+            className="text-sm font-medium text-black hover:text-base hover:border-b-2  hover:border-customPurple hover:pb-2 transition"
           >
             Listings
-          </Link>
+          </NavLink>
         </li>
       </ul>
-      <div className="flex items-center justify-between p-2 md:p-8">
-        <button
-          onClick={() => {
-            handleOpenLogin();
-            setOpenMenu(false);
-          }}
-          className=" bg-customPurple px-2 py-1 md:px-4 md:py-2 rounded-md text-white text-sm font-medium hover:p-1"
+      <div
+        className={
+          user
+            ? "flex items-center justify-center p-2 md:p-8"
+            : "flex items-center justify-between p-2 md:p-8"
+        }
+      >
+        {!user && (
+          <button
+            onClick={() => {
+              handleOpenLogin();
+              setOpenMenu(false);
+            }}
+            className=" bg-customPurple px-2 py-1 md:px-4 md:py-2 rounded-md text-white text-sm font-medium transform hover:scale-105 transition"
+          >
+            Log in
+          </button>
+        )}
+
+        <NavLink
+          to="/createPost"
+          onClick={() => setOpenMenu(false)}
+          className="border border-customPurple text-customPurple px-2 py-1 md:px-4 md:py-1 rounded-md text-sm font-medium transform hover:scale-105 transition"
         >
-          Log in
-        </button>
-        <button className="border border-customPurple text-customPurple px-2 py-1 md:px-4 md:py-1 rounded-md text-sm font-medium">
           Make a Posting
-        </button>
+        </NavLink>
       </div>
-      <span
+      <button
         onClick={() => setOpenMenu(false)}
         className="absolute top-2 right-4 text-2xl text-customPurple font-bold cursor-pointer"
       >
         x
-      </span>
+      </button>
     </div>
   );
 };
